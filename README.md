@@ -34,4 +34,12 @@
   dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.9
   dotnet add package Swashbuckle.AspNetCore --version 5.6.3
   dotnet add package EntityFrameworkPaginateCore --version 2.1.0
+  dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.9
+```
+
+# Comandos para migração
+```bash
+  dotnet tools install --global dotnet-ef
+  dotnet ef migrations add AlunosAdd
+  dotnet ef database update
 ```
