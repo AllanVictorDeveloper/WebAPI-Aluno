@@ -35,7 +35,11 @@ namespace webapi
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "webapi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "WebAPI - Alunos", 
+                    Version = "v1", 
+                    Description = "Web API feita para Alunos"
+                 });
             });
         }
 
@@ -49,7 +53,7 @@ namespace webapi
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapi v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapi v1 - Alunos"));
 
             app.UseHttpsRedirection();
 
